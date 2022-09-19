@@ -1,11 +1,3 @@
-mysql:
-	docker container run -i -t --platform=linux/amd64 mysql:5.7 bash
-
-image:
-	docker image build --tag docker-practice:db --file docker/Dockerfile 
-
-
-
 docker-build:
 	docker-compose build
 docker-up:
@@ -15,7 +7,9 @@ docker-stop:
 docker-rm:
 	docker-compose rm
 docker-bash:
-	docker exec -i -t mysql /bin/bash
+	docker exec -i -t mysql bash
+docker-mysql:
+	docker exec -i -t mysql mysql
 
 docker-server: docker-build docker-up
 docker-clean: docker-stop docker-rm

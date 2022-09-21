@@ -1,4 +1,4 @@
-use mydatabase;
+use db;
 
 create table person
 (person_id INT,

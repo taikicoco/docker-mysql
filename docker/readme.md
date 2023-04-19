@@ -1,1 +1,0 @@
-mysql> source docker-entrypoint-initdb.d/init.sql

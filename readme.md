@@ -1,8 +1,10 @@
 # docker-mysql
+## mysql with [sakila Database](https://dev.mysql.com/doc/sakila/en/)
+[mysql:8.0.30-debian](https://hub.docker.com/layers/library/mysql/8.0.30-debian/images/sha256-2506c5888811a468d1bb01f18ef37a7a13847122c7e48e9ad1ba013b9b8c52fe?context=explore)
 
-[dockerhub mysql:5.7](https://hub.docker.com/layers/library/mysql/5.7/images/sha256-933bcfdb15aa93f4cfc0dad61da7e88652a3e87d6b69cf87ecbde22226ed5e0d?context=explore)
 ```
 $ cd docker-mysql
-$ make docker-server
-$ make docker-bash
+$ make build
+$ make up
+$ make mysql
 ```
